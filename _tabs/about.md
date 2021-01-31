@@ -4,5 +4,6 @@ icon: fas fa-info
 order: 4
 ---
 
+If you have any further help, please contact me via email (huynhbathanh@gmail.com).
 
-> **Note**: Add Markdown syntax content to file `_tabs/about.md` and it will show up on this page.
+Thank you!
