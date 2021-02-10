@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to override bootstrap badge color"
+title: "How to override Bootstrap badge color"
 categories:
   - Frontend
 tags:

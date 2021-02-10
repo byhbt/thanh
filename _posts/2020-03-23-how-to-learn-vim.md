@@ -37,8 +37,7 @@ G: end of line
 gg
 
 ### 4. Install plugin:
-Edit ~/.vimrc
-[https://vimawesome.com/](https://vimawesome.com/)
+Edit `~/.vimrc`, [https://vimawesome.com](https://vimawesome.com)
 
 ### 5. Edit
 :e

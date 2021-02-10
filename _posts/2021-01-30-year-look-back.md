@@ -9,13 +9,13 @@ tags:
 
 ### Look back 2020
 
-From my first launch the blog [one year ago](https://www.thanh.xyz/blog/blog-launch/), look back.
+From launch the blog until now (https://www.thanh.xyz/blog/blog-launch/), look back.
 
-Yeah, I have kept the site up for a year. Interstingly.
+The blog now is 1 year old. :)
 
 This is just a small blog with limited content, luckily, there still some visitors.
 
-One of them has emailed to me to ask for supporting for an issue, that make me feel I am on the right path, at least my content here is useful not only me.
+One of them has emailed to me to ask for supporting for an issue, that make me feel this blog is useful not only for me.
 
 ### Look forward to 2021
 

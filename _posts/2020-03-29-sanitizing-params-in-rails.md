@@ -72,7 +72,9 @@ So here what is the **different** between **single quote** vs **double quotes** 
 
        (compared using ==)
 ```
+
 Then let try to clarify these result again in `irb`
+
 
 ```bash
 irb
@@ -88,6 +90,7 @@ before.
 
 
 ## Implement
+
 ```ruby
 def entry_params
   permitted_attributes = %i(title content)
