@@ -4,7 +4,7 @@ icon: fas fa-info
 order: 4
 ---
 
-I am Thanh, just another developer who enthusiasm and passion for web development and Devops.
+I am Thanh, my daily work is about web development and server maintainance.
 
 I am focusing on:
 - Ruby On Rails: building custom web application
@@ -14,4 +14,6 @@ I am focusing on:
 
 If you have any further help, please contact me via email (huynhbathanh@gmail.com).
 
-Thank you!
+If you wan to see my work, please check out my [Github](github.com/byhbt)
+
+Thank you for your time here!
