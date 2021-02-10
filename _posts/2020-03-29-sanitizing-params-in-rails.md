@@ -9,7 +9,9 @@ tags:
 ---
 
 ## The problem:
-Post data to api
+Here is the example of data which `POST` from a client to API endpoint:
+
+
 ```json
 {
   "data": {
@@ -21,12 +23,15 @@ Post data to api
   }
 }
 ```
-### Requirement:
+
+In the `content`, there are whitespaces in the leading, trailing and middle.
+
+## Expectation:
 
 - The spaces and the whitespaces should be removed from the leading and trailing.
 - Keep the spaces in between only.
 
-*what is the whitespaces?*
+*What is the whitespace?*
 - null, horizontal tab, line feed, vertical tab, form feed, carriage return, space.
 
 ## Rspec
@@ -67,7 +72,7 @@ So here what is the **different** between **single quote** vs **double quotes** 
 
        (compared using ==)
 ```
-Then let try to experiment it in **irb**
+Then let try to clarify these result again in `irb`
 
 ```bash
 irb
@@ -112,7 +117,7 @@ Not stop at this step, let use IRB to play with the string.
 
 [https://apidock.com/ruby/String/strip%21](https://apidock.com/ruby/String/strip%21)
 
-> Removes leading and trailing whitespace from str. Returns nil if str was not altered.
+> Removes leading and trailing whitespace from `str`. Returns `nil` if `str` was **not** altered.
 
 **What if we try to `delete` before `strip`? And the final decision is**
 
@@ -126,12 +131,13 @@ Let combine them:
 ```ruby
 params[:content]&.strip!&.delete!("\r\n\t")
 ```
+
 But here the `strip` will return `nil` when there is nothing to alter.
 Then reverse the `delete` and `strip` to avoid the `nil`
 
-### Final
+## Conclusion
 
-Remove whitespaces leading and trailing, in between also keep the spaces in the middle.
+In order to remove the whitespaces __leading__ and __trailing__, and keep the spaces in the middle.
 
 ```ruby
 params[:content]&.delete!("\r\n\t")&.strip!
