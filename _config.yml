@@ -7,10 +7,10 @@ theme: jekyll-theme-chirpy
 # --------------------------
 title: Thanh                          # the main title
 
-tagline: Enthusiasm and passion for web development   # it will display as the sub-title
+tagline: Enthusiasm and passion web developer   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  Thanh - The journal of a web developer
+  Continuous Learning ... (CL)
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: ''
