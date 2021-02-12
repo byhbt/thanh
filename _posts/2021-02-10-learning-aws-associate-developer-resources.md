@@ -18,6 +18,7 @@ My first challenge of 2021 is about learning AWS Associate Developer certificate
 - Security
 - Serverless architecture
 - Docker
+- [Caching strategy](https://docs.aws.amazon.com/AmazonElastiCache/latest/mem-ug/Strategies.html)
 
 And here is the list of resources I use for learning, hope it's useful for you too. :)
 
