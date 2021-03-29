@@ -19,3 +19,6 @@ Sure, i will read book later on to solidify my knowledge
 
 2. Build comments list
 [Powering up with React](https://www.pluralsight.com/courses/code-school-powering-up-with-react)
+
+3. [Build currency exchange](https://github.com/byhbt/4xrates)
+
