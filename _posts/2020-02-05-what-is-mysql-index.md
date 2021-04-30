@@ -14,12 +14,12 @@ tags:
 
 ### What is B-Tree?
 
-B-Tree is a self-balancing search tree.
+It is a self-balancing search tree.
 
-### When use index?
+### When to use index?
 
 - WHERE clause quickly.
-- When have multiple indexes, MySQL use the index that finds the smallest number of rows.
+- When having multiple indexes, MySQL uses the index that finds the smallest number of rows.
 - Index won't work if incorrect data type, for example, you index email column but when you do the query like that
 
 ```sql
@@ -46,7 +46,7 @@ If the row is updated then index need to be updated.
 - Indexes eat ram, disk space.
 
 ### Common pitfalls
-- If we use function like YEAR() then the index column won't be used.
+- If we use a function e.g: YEAR() then the index column won't be used.
 Use range of full datetime instead
 
 - Multi index column:
@@ -56,7 +56,7 @@ Inequality of operation
 
 ### Sample databases
 
-When learning some concept you need a sample databases.
+When learning some concept you need a sample database.
 
 - [https://dev.mysql.com/doc/sakila/en/](https://dev.mysql.com/doc/sakila/en/)
 - [https://github.com/byhbt/laravel-database-indexes](https://github.com/byhbt/laravel-database-indexes)

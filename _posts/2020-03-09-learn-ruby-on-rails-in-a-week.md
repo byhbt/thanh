@@ -47,7 +47,7 @@ Notice: Focus on the Ruby and Rails. Don't spend time on IDE, productivity...
 
 ### Step 4: Review
 
-Make sure understand Rail workflow:
+Make sure you understand Rails workflow:
 
 1. Debugging
 2. Logging/Exception handling

@@ -8,9 +8,9 @@ tags:
   - scrapy
 ---
 Notice:
-Here we just learn to drive a car, not to build an egine. So I don't dig deeper into how crawler work
+Here we just learn to drive a car, not to build an engine. So I don't dig deeper into how crawler work
 
-As we know Scrapy is popular framework for crawling data.
+As we know *Scrapy* is a popular framework for crawling data.
 There is another library is called BeautifulSoup.
 
 **What is Scrapy?**
@@ -19,7 +19,7 @@ There is another library is called BeautifulSoup.
 **What is Beautiful Soup?**
 > Beautiful Soup is a Python **library** for pulling data out of HTML and XML files.
 
-### What is the different between Scrapy and BeautifulSoup?
+### What is the difference between Scrapy and BeautifulSoup?
 
 Scrapy is a Framework.
 

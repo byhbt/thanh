@@ -9,18 +9,18 @@ tags:
 
 ### Look back 2020
 
-From launch the blog until now (https://www.thanh.xyz/blog/blog-launch/), look back.
+From the launch post, the blog until now (https://www.thanh.xyz/blog/blog-launch/), look back.
 
-The blog now is 1 year old. :)
+This Blog now is 1 year old. :D
 
 This is just a small blog with limited content, luckily, there still some visitors.
 
-One of them has emailed to me to ask for supporting for an issue, that make me feel this blog is useful not only for me.
+One of them has emailed me to ask about an issue, that makes me feel this blog is useful not only for me. :D
 
 ### Look forward to 2021
 
 I updated the skin and migrate the website to [Netlify](https://www.netlify.com/).
 
-I want to improve my writing skill, also share more technical stuffs on this blog.
+I would like to improve my writing skill, also share what I have learned from my work.
 
-Thank you for reading!
+Thank you for your time!

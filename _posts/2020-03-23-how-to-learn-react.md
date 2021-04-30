@@ -8,11 +8,11 @@ tags:
 ---
 
 
-This week i plan to learn React.
+This week I plan to learn React.
 
-Again, we do won't read book, just focus on build example for simple to advance.
+Again, we won't read books, just focus on build some examples from simple to advance.
 
-Sure, i will read book later on to solidify my knowledge
+Sure, I will read a book later on to solidify my knowledge
 
 1. Build tac-tic-toe game
 [https://reactjs.org/tutorial/tutorial.html](https://reactjs.org/tutorial/tutorial.html)

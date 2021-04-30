@@ -8,19 +8,19 @@ tags:
   - vim
 ---
 
-While [learning Ruby](https://www.thanh.xyz/ruby/how-to-plan-to-learn-ruby-on-rails-in-a-week/), i see some instructor demo writing code using VIM.
+While [learning Ruby](https://www.thanh.xyz/ruby/how-to-plan-to-learn-ruby-on-rails-in-a-week/), I see some instructor demo writing code using VIM.
 
-Before i know it but just use for some basic editing text in the console, for example on the VPS, there is not IDE/Subline/VSCode.
+Before I know it but just use it for some basic editing text in the console, e.g: on the VPS, there is not IDE/Subline/VSCode.
 
-First time if we look at vim cheatsheet might be a little bit overwhelming at first, so do not try to learn all at once.
+At first time if we look at [vim cheatsheet](https://vim.rtorr.com/) might be a little bit overwhelming at first, so do not try to learn all at once.
 
-My goal is learn first 10 shortcuts key, then apply on a daily basis for work.
+My goal is to learn about the top common use 10 shortcuts key, then apply them to my daily work.
 
 ### 0. Mode
 v: visualize mode
 i: insert mode
 
-1. Exit and saving
+1. Exit and save
 :w :wq :q! :wq!
 
 ### 2. Copy and paste:
@@ -45,8 +45,8 @@ Edit `~/.vimrc`, [https://vimawesome.com](https://vimawesome.com)
 :sp
 :vsp
 
-Benefit of VIM:
-- Focus: as you continuous typing, then not switch from windows to windows.
-- Super lightweight...
+Benefits of VIM:
+- Focus: as you typing, then not switch from windows to windows.
+- Super lightweight
 
-Next, i will try using vim keymap in some modern text editors(vscode, sublime) or RubyMine.
+Next, I will try using vim keymap in some modern text editors(`vscode`, `Sublime`) or RubyMine.

@@ -53,8 +53,8 @@ describe 'POST /api/v1/entry' do
 end
 ```
 
-In the rspec if i use *single quote* instead of *double quote* then i will got this error.
-it mean the string are being escaped while running the test.
+In the `rspec` if I use *single quote* instead of *double quote* then I got that error.
+It means the string is escaped while running the test.
 
 So here what is the **different** between **single quote** vs **double quotes** in Ruby?
 - Double-quoted easier to read, hard to type
@@ -85,7 +85,7 @@ irb
 2.4.0 :003 >
 ```
 
-When use *single quote* the `\n` will be escape, adding one more forward slash
+When use *single quote* the `\n` will be **escaped**, adding one more forward slash
 before.
 
 
@@ -116,7 +116,7 @@ Not stop at this step, let use IRB to play with the string.
  => nil
 2.4.0 :019 >
 ```
-**Why it return `nil`?**
+**Why it returns `nil`?**
 
 [https://apidock.com/ruby/String/strip%21](https://apidock.com/ruby/String/strip%21)
 

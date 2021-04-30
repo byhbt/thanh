@@ -18,7 +18,7 @@ Notice:
 
 ### 1. What is **samesite** cookie and how to see it?
 
-Actually the docs of Google is quite long
+The docs of Google is quite long
 [https://web.dev/samesite-cookies-explained/](SameSite cookies explained)
 
 I prefer the video first, then back to read the docs of Google
@@ -26,10 +26,10 @@ I prefer the video first, then back to read the docs of Google
 [https://www.youtube.com/watch?v=urdtmjuukbk](HTTP Cookie SameSite Attribute)
 
 
-This article help us spot the issue faster:
+This article helps us spot the issue faster:
 [https://www.chromium.org/updates/same-site/test-debug](https://www.chromium.org/updates/same-site/test-debug)
 
-###  2. Shopify supports embedded app so this cause the samesite cookie issue
+###  2. Shopify supports embedded app so this causes the samesite cookie issue
 
 
 > Embedded apps and the SameSite attribute
@@ -45,7 +45,7 @@ https://shopify.dev/tutorials/migrate-your-app-to-support-samesite-cookies#embed
 ### 3. How many way to solve it:
 
 1. PHP, we look for where the code use **setcookie()** method then modify it
-php version 7.3 is supporting SameSite cookie but I am sure it's quite new at the moment i write this post, so most our system still running php 7.1, 7.2
+PHP version 7.3 is supporting SameSite cookie but I am sure it's quite new at the moment I write this post, so most our system still running PHP 7.1, 7.2
 
 [https://wiki.php.net/rfc/same-site-cookie](https://wiki.php.net/rfc/same-site-cookie)
 
@@ -56,7 +56,7 @@ php version 7.3 is supporting SameSite cookie but I am sure it's quite new at th
 
 #### Step 1:
 
-Base on this document, we will try to looking in our code base where these methods is used.
+Base on this document, we will search that phrase in our codebase where these methods are used.
 - setcookie()
 - setrawcookie()
 - session_set_cookie_params()
@@ -117,7 +117,7 @@ $di->setShared('session', function () {
 
 #### Other cases:
 
-There is a case, even after i mark the cookie as SameSite None and Secure but there are still an issue:
+There is a case, even after I mark the cookie as SameSite None and Secure but there are still an issue:
 
 Screenshot:
 
@@ -164,7 +164,7 @@ Maybe there is something changed in js app.js library.
       }
   </script>
 ```
-The problem is solved, please double check the feature related to Shopify Embedded App Library.
+The problem is solved, please double-check the feature related to Shopify Embedded App Library.
 
 ### Other fix techniques:
 

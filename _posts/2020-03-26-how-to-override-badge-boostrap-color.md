@@ -58,5 +58,5 @@ What work
 [https://css-tricks.com/bem-101/](https://css-tricks.com/bem-101/)
 
 
-## What is Building Blocks?
+## What is the Building Blocks?
 [https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance)

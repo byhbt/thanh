@@ -8,8 +8,7 @@ tags:
   - colon
 ---
 
-The position of colon in Ruby code make me quite confuse at the first time.
-
+The position of the colon in Ruby code confused me for a few days.
 ## 1. Before a text (:foo)
 
 ```ruby

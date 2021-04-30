@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to fix the invalid session id in Wallaby Integration Test"
+title: "How to fix the invalid session id in Wallaby integration testing"
 categories:
   - Elixir
 tags:
@@ -8,9 +8,11 @@ tags:
   - wallaby
 ---
 
+## Problem
+
 When I run the integration test in my [kwtool project](https://github.com/byhbt/kwtool), then the console raises this error:
 
-```
+```bash
 test user can visit homepage (KwtoolWeb.HomePage.ViewRegistrationPageTest)
 test/kwtool_web/features/registration_page/view_registration_page_test.exs:11
 ** (RuntimeError) invalid session id
@@ -22,14 +24,20 @@ stacktrace:
 
 Oh, what!? It has run successfully before. Why does it happen today?
 
-At the first sight, we can see this is a **RuntimeError**, and the message is "invalid session id".
+At first sight, we can see this is a **RuntimeError**, and the message is "invalid session id".
 We can read more details about this error here [https://developer.mozilla.org/en-US/docs/Web/WebDriver/Errors/InvalidSessionID](https://developer.mozilla.org/en-US/docs/Web/WebDriver/Errors/InvalidSessionID).
 
 [Dig a bit deeper](https://github.com/elixir-wallaby/wallaby/issues/468), we can see the reason is the difference between `Google Chrome` *version* and `chromedriver` *verion*.
 
-We can use this script to check the version, I get it from the thread on [Github issue discussion](https://github.com/elixir-wallaby/wallaby/issues/468#issuecomment-810518368)
+## Solution
 
-```
+We can use [this script below](https://github.com/elixir-wallaby/wallaby/issues/468#issuecomment-810518368) to check the version of both applications.
+
+Create a new file, name it as `./test-wallaby.sh` anywhere that easy for you to manage.
+
+Then paste the content below into that file.
+
+```bash
 #!/usr/bin/env bash
 
 chromedriver_path=$(command -v chromedriver)
@@ -53,7 +61,7 @@ fi
 
 And the result is:
 
-```
+```shell
 ➜ projects ./test-wallaby.sh
 Wallaby often fails with 'invalid session id' if Chromedriver and Chrome have different versions.
 Chromedriver version: ChromeDriver 88.0.4324.96 (68dba2d8a0b149a1d3afac56fa74648032bcf46b-refs/branch-heads/4324@{#1784}) (/usr/local/bin/chromedriver)
@@ -62,13 +70,13 @@ Chrome version      : Google Chrome 90.0.4430.93  (/Applications/Google Chrome.a
 
 Yeah, this could be the issue. So now we go to the [Chromium website](https://chromedriver.chromium.org/downloads) to download the match version of `chromedriver`
 
+After download the correct version, extract the `chromedriver_mac64.zip` file then move it to `/usr/local/bin` by using this command:
 
-After download the correct version, extract the zip file then move it to `/usr/local/bin` by using this command:
-
-```bash
+```shell
 mv chromedriver /usr/local/bin
 ```
+Notice: I am using MacOS so I will put it to `/usr/local/bin`, please check it depends on your OS.
 
-Now back to the integration testing and run it again. In my case, now the integration test ran properly on my local development.
+Now back to the integration testing script and run it again. In my case, now the integration test ran properly on my local development.
 
-Thank you for reading and have a good day.
+Thank you for reading, have a good day :)!

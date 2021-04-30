@@ -11,7 +11,8 @@ tags:
 
 ## Introduction
 
-My first challenge of 2021 is about learning AWS Associate Developer certificate. It's more interesting then I thought. You will not only learn about the AWS products but also about some knowledge help you have a bigger view about application deployment and architecture. For example:
+My first challenge of 2021 is about learning AWS Associate Developer certificate. It's more interesting than I thought.
+You will not only learn about the AWS products but also about some knowledge help you have a bigger view about application deployment and architecture. For example:
 
 - Load balancing
 - [Blue green](https://semaphoreci.com/blog/blue-green-deployment) deployment
@@ -36,7 +37,7 @@ And here is the list of resources I use for learning, hope it's useful for you t
 
 ## II. How to learn
 
-### 1. Don't waste time of searching for material
+### 1. Don't waste your time of searching for material
 
 I follow the structure of the [Udemy AWS course above](https://www.udemy.com/course/aws-certified-developer-associate-dva-c01) and reading AWS Docs
 - [S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html)
@@ -45,7 +46,7 @@ I follow the structure of the [Udemy AWS course above](https://www.udemy.com/cou
 
 From my experience, there is __no best material__. We can choose 1 course or book, let consider it as the **base material**, then follow it from the start to finish.
 
-A long the way, we will reference to other materials when the concepts in base material are not clear enough, or you don't understand it.
+Along the way, we will reference to other materials when the concepts in base material are not clear enough, or you don't understand it.
 
 ### 2. "Get your feet wet"
 

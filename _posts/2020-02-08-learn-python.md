@@ -7,19 +7,19 @@ tags:
   - python
 ---
 
-As the first sight, I think Python is easy to learn as PHP,
+IMO, I think Python is easy to learn as PHP,
 the syntax is quite simple and clear, huge tutorials, library
 from the community.
 
-But actually not like that, anything if you try to gain deeper knowledge
-it always take time.
+But not like that, anything if you try to gain deeper knowledge
+it always takes time.
 
-There is some new term i learn from Python (3):
+There is some new term I learn from Python (3):
 
 ### Data structure
 
 #### Dictionary:
-Look like associate array in PHP, with a list of key and value.
+Look like associates array in PHP, with a list of key and value.
 
 #### Tuple:
 Just like array but immutable (cannot update/change/delete element(s)), and use (1,2,3,4)

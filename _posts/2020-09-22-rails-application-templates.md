@@ -16,14 +16,14 @@ As the very first guide we do like this:
 rails new blog -d postgresql
 ```
 
-After that you add some essentials gems and its configuration, init Devise, add user controller...
+After that, you add some essentials gems and configuration, init Devise, add user controller...
 
 - Devise: for authentication.
 - Fiago: manage env variable.
 - Replace Minitest by RSpec.
 - etc...
 
-And then a new project come, will you do the same? I think the answer is `NO` right?
+And then a new project comes, will you do the same? I think the answer is `NO` right?
 
 So as Rails philosophy: **"DRY"** and **"Convention Over Configuration"**.
 
