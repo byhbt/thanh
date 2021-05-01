@@ -20,3 +20,5 @@ If you have any further help, please contact me via email (huynhbathanh@gmail.co
 If you would like to see my work, please check out my [Github](https://github.com/byhbt)
 
 Thank you for your time here!
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/S6S44HID9)
