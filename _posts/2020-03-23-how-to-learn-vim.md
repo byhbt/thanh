@@ -12,7 +12,7 @@ While [learning Ruby](https://www.thanh.xyz/ruby/how-to-plan-to-learn-ruby-on-ra
 
 Before I know it but just use it for some basic editing text in the console, e.g: on the VPS, there is not IDE/Subline/VSCode.
 
-At first time if we look at [vim cheatsheet](https://vim.rtorr.com/) might be a little bit overwhelming at first, so do not try to learn all at once.
+At first, when we look at [vim cheat sheet](https://vim.rtorr.com/), it may be a bit overwhelming at first, so do not try to learn **all** at once.
 
 My goal is to learn about the top common use 10 shortcuts key, then apply them to my daily work.
 
