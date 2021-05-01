@@ -16,6 +16,3 @@ package = "netlify-plugin-submit-sitemap"
 		"google",
 		"bing"
 	]
-
-[[plugins]]
-package = "./plugins/netlify-purge-cloudflare-on-deploy"
