@@ -17,6 +17,6 @@ I am focusing on:
 
 If you have any further help, please contact me via email (huynhbathanh@gmail.com).
 
-If you wan to see my work, please check out my [Github](https://github.com/byhbt)
+If you would like to see my work, please check out my [Github](https://github.com/byhbt)
 
 Thank you for your time here!
