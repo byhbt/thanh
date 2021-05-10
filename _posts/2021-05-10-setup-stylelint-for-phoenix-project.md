@@ -18,14 +18,21 @@ Let start the **first step**, by adding the `stylelint` and its related packages
 File: `assets/package.json`
 
 ```json
+{
+  "devDependencies": {
+    "...",
     "stylelint": "^13.13.0",
     "stylelint-config-standard": "21.0.0",
     "stylelint-scss": "3.19.0",
+  }
+}
 ```
 
 Create `stylelint` config file file `assets/.stylelintrc`, this config is be loaded automatically by `stylelint` command.
 
-```
+For more details about supporting rules and configurations, you can check here [https://stylelint.io/user-guide/rules/about](https://stylelint.io/user-guide/rules/about) then update it to adapt your project requirements.
+
+```json
 {
   "plugins": [
     "stylelint-scss"
@@ -61,7 +68,7 @@ Create `stylelint` config file file `assets/.stylelintrc`, this config is be loa
 Let's move on to the next step, we need to add StyleLint to Phoenix Mix Task by open `mix.es` file, then add these lines to the existing method `aliases`.
 You can change `codebase` and `codebase.fix` to whatever you want.
 
-```
+```elixir
   defp aliases do
     [
       codebase: [
@@ -75,8 +82,8 @@ You can change `codebase` and `codebase.fix` to whatever you want.
   end
 ```
 
-From now on, you can use the command `mix codebase` or `mix codebase.fix` to check or clean your stylesheet code.
-You can run this command on the CI as well so it will help us validate the style files on CI.
+From now on, we can use the command `mix codebase` or `mix codebase.fix` to check or clean your stylesheet code.
+We also run this command on the CI as well, so it will help us validate the style files on CI.
 
 Thanks my co-worker has [suggested me](https://github.com/byhbt/kwtool/pull/32#discussion_r622694106) this approach. It's great. :)
 
