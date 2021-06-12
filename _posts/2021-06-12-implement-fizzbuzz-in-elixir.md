@@ -17,9 +17,10 @@ Let solve the classic programming challenge called "Fizzbuzz". I get the problem
 Then let break it down:
 
 - Given X from 1 -> 100
-- If X multiple of 3 return Fizz
-- If X multiple of 5 return Buzz
-- If X multiple of 3 and 5 return "FizzBuzz"
+- If X multiple of 3 return `Fizz`
+- If X multiple of 5 return `Buzz`
+- If X multiple of 3 and 5 return `FizzBuzz`
+- Otherwise return the number
 
 Above all, make sure we understand the problem correctly. If yes, cool! So now let the hacking begin!
 
