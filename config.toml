@@ -1,0 +1,17 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "My New Hugo Site"
+theme = "hyde"
+
+[Menus]
+  main = [
+    {Name = "Github", URL = "https://github.com/byhbt/"}
+  ]
+
+
+[params]
+  disqusShortname = ""
+  googleAnalytics = ""
+  layoutReverse = false
+  theme = "hyde"
+  themeColor = ""
