@@ -1,4 +1,4 @@
-baseURL = "https://thanh.xyz/"
+baseURL = "https://thanh.xyz"
 languageCode = "en-us"
 title = "Thanh"
 theme = "pure"
