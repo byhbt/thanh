@@ -7,7 +7,6 @@ tags:
   - devops
 title: Learning AWS Associate developer resources
 date: 2021-02-10
-url: /posts/learning-aws-associate-developer-resources/
 ---
 
 

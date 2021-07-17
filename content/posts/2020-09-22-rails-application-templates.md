@@ -6,7 +6,6 @@ tags:
   - skeleton
 title: Rails Application Templates
 date: 2020-09-22
-url: /posts/rails-application-templates/
 ---
 
 

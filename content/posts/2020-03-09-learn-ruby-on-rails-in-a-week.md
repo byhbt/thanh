@@ -5,7 +5,6 @@ tags:
   - learn
 title: Learn Ruby On Rails in a week
 date: 2020-03-09
-url: /posts/learn-ruby-on-rails-in-a-week/
 ---
 
 

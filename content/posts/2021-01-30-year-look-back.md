@@ -5,7 +5,6 @@ tags:
   - daily
 title: 2021 - A Year Look Back
 date: 2021-01-30
-url: /posts/year-look-back/
 ---
 
 

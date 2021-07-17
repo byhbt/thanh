@@ -6,7 +6,6 @@ tags:
   - sanitizing
 title: Sanitizing params in Rails
 date: 2020-03-29
-url: /posts/sanitizing-params-in-rails/
 ---
 
 

@@ -7,7 +7,6 @@ tags:
   - frontend
 title: Setup StyleLint for Phoenix project
 date: 2021-05-10
-url: /posts/setup-stylelint-for-phoenix-project/
 ---
 
 

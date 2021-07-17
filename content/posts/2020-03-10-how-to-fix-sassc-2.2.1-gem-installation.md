@@ -6,7 +6,6 @@ tags:
   - bundle
 title: How to fix sassc-2.2.1 Gem installtion
 date: 2020-03-10
-url: /posts/how-to-fix-sassc-2.2.1-gem-installation/
 ---
 
 

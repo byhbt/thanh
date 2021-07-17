@@ -8,7 +8,6 @@ tags:
   - shopify
 title: How to fix samesite cookie for Shopify App
 date: 2020-02-15
-url: /posts/how-to-fix-samesite-cookie-shopify-app/
 ---
 
 

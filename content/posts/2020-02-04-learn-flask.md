@@ -5,7 +5,6 @@ tags:
   - python
 title: Learn Flask
 date: 2020-02-04
-url: /posts/learn-flask/
 ---
 
 

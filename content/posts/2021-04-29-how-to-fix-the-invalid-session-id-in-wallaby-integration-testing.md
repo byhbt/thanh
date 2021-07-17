@@ -6,7 +6,6 @@ tags:
   - wallaby
 title: How to fix the invalid session id in Wallaby integration testing
 date: 2021-04-29
-url: /posts/how-to-fix-the-invalid-session-id-in-wallaby-integration-testing/
 ---
 
 

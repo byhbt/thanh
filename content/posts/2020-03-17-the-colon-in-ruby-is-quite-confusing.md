@@ -6,7 +6,6 @@ tags:
   - colon
 title: The colon in Ruby is quite confusing
 date: 2020-03-17
-url: /posts/the-colon-in-ruby-is-quite-confusing/
 ---
 
 

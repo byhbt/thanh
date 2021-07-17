@@ -6,7 +6,6 @@ tags:
   - scrapy
 title: Laravel dependencies Injection
 date: 2020-02-10
-url: /posts/laravel-dependencies-injection/
 ---
 
 Notice:

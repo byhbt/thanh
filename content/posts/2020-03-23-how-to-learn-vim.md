@@ -6,7 +6,6 @@ tags:
   - vim
 title: How to learn VIM
 date: 2020-03-23
-url: /posts/how-to-learn-vim/
 ---
 
 

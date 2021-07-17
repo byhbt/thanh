@@ -5,7 +5,6 @@ excerpt_separator: <!--more-->
 tags:
   - mysql
 title: MySQL Index
-url: /2020/02/05/what-is-mysql-index/
 ---
 
 

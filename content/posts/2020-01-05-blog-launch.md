@@ -5,7 +5,6 @@ tags:
   - daily
 title: Blog Launch
 date: 2020-02-04
-url: /posts/blog-launch/
 ---
 
 Open my web blog again.

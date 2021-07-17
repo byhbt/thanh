@@ -6,7 +6,6 @@ tags:
   - fizzbuzz
 title: Implement Fizzbuzz in Elixir
 date: 2021-06-12
-url: /posts/implement-fizzbuzz-in-elixir/
 ---
 
 

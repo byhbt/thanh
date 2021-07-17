@@ -6,7 +6,6 @@ tags:
   - elixir
 title: How to learn Elixir
 date: 2021-03-29
-url: /posts/how-to-learn-elixir/
 ---
 
 

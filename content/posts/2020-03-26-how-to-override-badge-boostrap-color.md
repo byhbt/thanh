@@ -6,7 +6,6 @@ tags:
   - bootstrap
 title: How to override Bootstrap badge color
 date: 2020-03-26
-url: /posts/how-to-override-badge-boostrap-color/
 ---
 
 
