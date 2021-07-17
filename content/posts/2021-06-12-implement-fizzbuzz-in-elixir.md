@@ -131,7 +131,7 @@ What we can learn from the above program:
 - TDD
 - Some basic syntax in Elixir
 - Testing in Elixir
-- Practice some shortcut key with your IDE/Editor
+- Practice some shortcut keys with your IDE/Editor
 
 In the end, please try to read, understand and rewrite it in another way if you could.
 

@@ -8,8 +8,6 @@ title: How to override Bootstrap badge color
 date: 2020-03-26
 ---
 
-
-
 Html structure
 
 ```slim
@@ -38,6 +36,7 @@ What does not work
 ```
 
 What work
+
 ```scss
 .badge-pill {
   &.badge-payment {
@@ -56,8 +55,9 @@ What work
 ```
 
 ## What is BEM?
+
 [https://css-tricks.com/bem-101/](https://css-tricks.com/bem-101/)
 
+## What are the Building Blocks?
 
-## What is the Building Blocks?
 [https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance)

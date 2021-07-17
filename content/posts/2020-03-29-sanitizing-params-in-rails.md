@@ -12,7 +12,6 @@ date: 2020-03-29
 ## The problem:
 Here is the example of data which `POST` from a client to API endpoint:
 
-
 ```json
 {
   "data": {
@@ -25,7 +24,7 @@ Here is the example of data which `POST` from a client to API endpoint:
 }
 ```
 
-In the `content`, there are whitespaces in the leading, trailing and middle.
+In the `content`, there are whitespaces in the leading, trailing and, middle.
 
 ## Expectation:
 
@@ -58,14 +57,14 @@ In the `rspec` if I use *single quote* instead of *double quote* then I got that
 It means the string is escaped while running the test.
 
 So here what is the **different** between **single quote** vs **double quotes** in Ruby?
-- Double-quoted easier to read, hard to type
+
+- Double-quoted easier to read, hard to type.
 - Double-quoted strings support interpolation.
 
 [https://stackoverflow.com/questions/279270/which-style-of-ruby-string-quoting-do-you-favour](https://stackoverflow.com/questions/279270/which-style-of-ruby-string-quoting-do-you-favour)
 [https://blog.appsignal.com/2016/12/21/ruby-magic-escaping-in-ruby.html
 ](https://blog.appsignal.com/2016/12/21/ruby-magic-escaping-in-ruby.html
 )
-
 
 ```bash
      expected: "consectetur   adipiscing elit"
@@ -117,6 +116,7 @@ Not stop at this step, let use IRB to play with the string.
  => nil
 2.4.0 :019 >
 ```
+
 **Why it returns `nil`?**
 
 [https://apidock.com/ruby/String/strip%21](https://apidock.com/ruby/String/strip%21)
@@ -141,7 +141,7 @@ Then reverse the `delete` and `strip` to avoid the `nil`
 
 ## Conclusion
 
-In order to remove the whitespaces __leading__ and __trailing__, and keep the spaces in the middle.
+To remove the whitespaces __leading__ and __trailing__, and keep the spaces in the middle.
 
 ```ruby
 params[:content]&.delete!("\r\n\t")&.strip!

@@ -89,5 +89,6 @@ We also run this command on the CI as well, so it will help us validate the styl
 Thanks my co-worker has [suggested me](https://github.com/byhbt/kwtool/pull/32#discussion_r622694106) this approach. It's great. :)
 
 **Further action:**
+
 - Check how to integrate it with Webpack.
 - Integrate with Intellij Idea.

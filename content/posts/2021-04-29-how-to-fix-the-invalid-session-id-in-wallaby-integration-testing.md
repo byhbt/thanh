@@ -34,7 +34,7 @@ We can read more details about this error here [https://developer.mozilla.org/en
 
 We can use [this script below](https://github.com/elixir-wallaby/wallaby/issues/468#issuecomment-810518368) to check the version of both applications.
 
-Create a new file, name it as `./test-wallaby.sh` anywhere that easy for you to manage.
+Create a new file, name it as `./test-wallaby.sh` anywhere that easy to manage.
 
 Then paste the content below into that file.
 
@@ -76,8 +76,9 @@ After download the correct version, extract the `chromedriver_mac64.zip` file th
 ```shell
 mv chromedriver /usr/local/bin
 ```
+
 Notice: I am using MacOS so I will put it to `/usr/local/bin`, please check it depends on your OS.
 
 Now back to the integration testing script and run it again. In my case, now the integration test ran properly on my local development.
 
-Thank you for reading, have a good day :)!
+Thank you for reading, have a good day :)

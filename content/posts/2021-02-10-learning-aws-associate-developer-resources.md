@@ -9,7 +9,6 @@ title: Learning AWS Associate developer resources
 date: 2021-02-10
 ---
 
-
 ## Introduction
 
 My first challenge of 2021 is about learning AWS Associate Developer certificate. It's more interesting than I thought.
@@ -47,7 +46,7 @@ I follow the structure of the [Udemy AWS course above](https://www.udemy.com/cou
 
 From my experience, there is __no best material__. We can choose 1 course or book, let consider it as the **base material**, then follow it from the start to finish.
 
-Along the way, we will reference to other materials when the concepts in base material are not clear enough, or you don't understand it.
+Along the way, we reference to other materials when the concepts in a base material are not clear enough, or you don't understand it.
 
 ### 2. "Get your feet wet"
 
@@ -58,6 +57,6 @@ Build some funny ideas base on what you learnt, for example in my case, I try to
 - [https://github.com/byhbt/97things4programmer](https://github.com/byhbt/97things4programmer)
 - [https://github.com/byhbt/hue-cuisine](https://github.com/byhbt/hue-cuisine)
 
-### 3. Looking futher
+### 3. Looking further
 
-When you learn Amazon, you should spend 5% of learning time (just a few) to reference to Microsoft/Google Cloud to see the equivilent services.
+When you learn Amazon, you should spend 5% of learning time (just a few) to reference to Microsoft/Google Cloud to see the equivalent services.

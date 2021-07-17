@@ -7,7 +7,6 @@ title: 2021 - A Year Look Back
 date: 2021-01-30
 ---
 
-
 ### Look back 2020
 
 From the launch post, the blog until now (https://www.thanh.xyz/blog/blog-launch/), look back.
