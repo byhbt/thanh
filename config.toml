@@ -80,7 +80,7 @@ sidebar = "right"
 widgets = [ "board", "tag_cloud", "category", "tag", "recent_posts" ]
 
 [params.highlightjs]
-langs = [ "python", "javascript" ]
+langs = [ "python", "javascript", "elixir", "bash", "sh", "json", "yml", "yaml" ]
 
 [params.tag_cloud]
 min = 8
