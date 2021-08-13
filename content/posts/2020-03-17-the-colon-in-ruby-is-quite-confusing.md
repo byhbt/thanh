@@ -10,6 +10,7 @@ date: 2020-03-17
 
 
 The position of the colon in Ruby code confused me for a few days.
+
 ## 1. Before a text (:foo)
 
 ```ruby

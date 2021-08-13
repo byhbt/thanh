@@ -10,11 +10,12 @@ title: How to fix samesite cookie for Shopify App
 date: 2020-02-15
 ---
 
-
 Notice:
+
 - My apps using PHP backend.
 
 ### 0. What is cookie?
+
 [https://www.bigcommerce.com/ecommerce-answers/what-cookie-and-why-it-important/](https://www.bigcommerce.com/ecommerce-answers/what-cookie-and-why-it-important/)
 
 ### 1. What is **samesite** cookie and how to see it?
@@ -31,7 +32,6 @@ This article helps us spot the issue faster:
 [https://www.chromium.org/updates/same-site/test-debug](https://www.chromium.org/updates/same-site/test-debug)
 
 ###  2. Shopify supports embedded app so this causes the samesite cookie issue
-
 
 > Embedded apps and the SameSite attribute
 > Since embedded Shopify apps run in an iframe on a different domain than the Shopify admin, they are considered to be in a third-party context.
@@ -58,13 +58,14 @@ PHP version 7.3 is supporting SameSite cookie but I am sure it's quite new at th
 #### Step 1:
 
 Base on this document, we will search that phrase in our codebase where these methods are used.
+
 - setcookie()
 - setrawcookie()
 - session_set_cookie_params()
 
 #### Step 2:
 
-How we will modify above methods?
+How we will modify the above methods?
 
 ```php
 <?php
@@ -141,8 +142,8 @@ maybe inside, it makes a request to app server, the get the samesite cookie warn
   </script>
 ```
 
-Then try to replace this one by Shopify App Bridge, everything is fine again.
-Maybe there is something changed in js app.js library.
+Then try to replace this one by the Shopify App Bridge, everything is fine again.
+Maybe there is something changed in js `app.js` library.
 
 ```html
   <script src="https://unpkg.com/@shopify/app-bridge@1.6/umd/index.js"></script>
@@ -165,8 +166,9 @@ Maybe there is something changed in js app.js library.
       }
   </script>
 ```
+
 The problem is solved, please double-check the feature related to Shopify Embedded App Library.
 
-### Other fix techniques:
+### Other fix techniques
 
 [https://stackoverflow.com/questions/39750906/php-setcookie-samesite-strict](https://stackoverflow.com/questions/39750906/php-setcookie-samesite-strict)
