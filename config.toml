@@ -1,0 +1,13 @@
+theme = "hyde"
+
+disqusShortname = "huynhbathanh"
+googleAnalytics = "UA-1460853-23"
+
+[Menus]
+  main = [
+    {Name = "Github", URL = "https://github.com/byhbt/"}
+  ]
+
+[params]
+  layoutReverse = false
+  description = "Hello!"

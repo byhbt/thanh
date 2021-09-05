@@ -36,7 +36,7 @@ select * from users where email=123
 - JOIN
 - SEARCH (WHERE last_name LIKE "a%")
 
-### What happen to field when it's indexed?
+### What happened to the field when it is indexed?
 
 - The field data will be put on RAM, so its faster to access.
 - PRIMARY KEY, UNIQUE, INDEX, FULLTEXT are stored in B-Tree.

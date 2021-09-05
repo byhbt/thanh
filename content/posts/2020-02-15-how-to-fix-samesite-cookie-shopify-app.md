@@ -27,11 +27,10 @@ I prefer the video first, then back to read the docs of Google
 [https://www.youtube.com/watch?v=GPz7onXjP_4](SameSite Cookies - Chrome Update)
 [https://www.youtube.com/watch?v=urdtmjuukbk](HTTP Cookie SameSite Attribute)
 
-
 This article helps us spot the issue faster:
 [https://www.chromium.org/updates/same-site/test-debug](https://www.chromium.org/updates/same-site/test-debug)
 
-###  2. Shopify supports embedded app so this causes the samesite cookie issue
+### 2. Shopify supports embedded app so this causes the samesite cookie issue
 
 > Embedded apps and the SameSite attribute
 > Since embedded Shopify apps run in an iframe on a different domain than the Shopify admin, they are considered to be in a third-party context.
@@ -43,7 +42,7 @@ https://shopify.dev/tutorials/migrate-your-app-to-support-samesite-cookies#embed
 
 
 
-### 3. How many way to solve it:
+### 3. How many ways to solve it?
 
 1. PHP, we look for where the code use **setcookie()** method then modify it
 PHP version 7.3 is supporting SameSite cookie but I am sure it's quite new at the moment I write this post, so most our system still running PHP 7.1, 7.2
@@ -59,9 +58,9 @@ PHP version 7.3 is supporting SameSite cookie but I am sure it's quite new at th
 
 Base on this document, we will search that phrase in our codebase where these methods are used.
 
-- setcookie()
-- setrawcookie()
-- session_set_cookie_params()
+- `setcookie()`
+- `setrawcookie()`
+- `session_set_cookie_params()`
 
 #### Step 2:
 

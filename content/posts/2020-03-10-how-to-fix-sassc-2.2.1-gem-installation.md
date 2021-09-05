@@ -13,7 +13,7 @@ When I tried to run **```bundle```** then I got this issue.
 
 The message is clear that **```make: g++: Command not found```**.
 
-```
+```bash
 current directory: /home/mypc/.rvm/gems/ruby-2.6.3/gems/sassc-2.2.1/ext
 make "DESTDIR="
 compiling ./libsass/src/cssize.cpp
