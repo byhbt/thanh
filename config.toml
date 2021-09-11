@@ -1,13 +1,82 @@
-theme = "hyde"
+baseURL = "https://thanh.xyz/"
+title = "Web Developer Journal"
+enableRobotsTXT = true
+enableEmoji = true
+theme = "jane"
 
+hasCJKLanguage = false    # has chinese/japanese/korean
+paginate = 3              # Number of articles displayed on the homepage
+rssLimit = 20             # Limit Entry Count to Rss file
 disqusShortname = "huynhbathanh"
 googleAnalytics = "UA-1460853-23"
+copyright = ""            # default: author.name
 
-[Menus]
-  main = [
-    {Name = "Github", URL = "https://github.com/byhbt/"}
-  ]
+# See https://gohugo.io/content-management/syntax-highlighting/
+PygmentsCodeFences = true # Enable syntax highlighting with GitHub flavoured code fences
+PygmentsUseClasses = true # Use CSS classes to format highlighted code
+PygmentsCodefencesGuessSyntax = true
+PygmentsOptions = "linenos=table"
+
+# language support # en / zh-cn / other... translations present in i18n/
+defaultContentLanguage = "en"           # Default language to use
+[languages.en]
+  languageCode = "en"
+
+[author]                  # essential
+  name = "thanh"
+
+[sitemap]                 # essential
+  changefreq = "weekly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
+[[menu.main]]
+  name = "Archives"
+  weight = 20
+  identifier = "archives"
+  url = "/post/"
+[[menu.main]]
+  name = "Tags"
+  weight = 30
+  identifier = "tags"
+  url = "/tags/"
+[[menu.main]]
+  name = "Categories"
+  weight = 40
+  identifier = "categories"
+  url = "/categories/"
+[[menu.main]]
+  name = "Github"
+  weight = 50
+  url = "https://github.com/byhbt"
+
 
 [params]
-  layoutReverse = false
-  description = "Hello!"
+  since = "2017"            # Site creation time          # 站点建立时间
+  homeFullContent = false   # if false, show post summaries on home page. Otherwise show full content.
+  rssFullContent = true     # if false, Rss feed instead of the summary
+
+  # site info (optional)                                  # 站点信息（可选，不需要的可以直接注释掉）
+  logoTitle = "Thanh.xyz"        # default: the title value    # 默认值: 上面设置的title值
+  keywords = ["Thanh", "byhbt", "huynhbathanh"]
+  description = "Thanh - Web Developer Journal"
+
+  # The date format to use; for a list of valid formats, see https://gohugo.io/functions/format/
+  dateFormatToUse = "2006-01-02"
+
+  # 一些全局开关，你也可以在每一篇内容的 front matter 中针对单篇内容关闭或开启某些功能，在 archetypes/default.md 查看更多信息。
+  # Some global options, you can also close or open something in front matter for a single post, see more information from `archetypes/default.md`.
+  toc = true                                                                            # 是否开启目录
+  photoswipe = true         # see https://github.com/dimsemenov/PhotoSwipe            # 是否启用PhotoSwipe（图片可点击）
+  contentCopyright = '<a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a>'
+
+  # Link custom CSS and JS assets
+  #   (relative to /static/css and /static/js respectively)
+  customCSS = []            # if ['custom.css'], load '/static/css/custom.css' file
+  customJS = []             # if ['custom.js'], load '/static/js/custom.js' file
+
+  [params.social]                                         # 社交链接
+    a-email = "mailto:huynhbathanh@gmail.com"
+    c-twitter = "http://twitter.com/huynhbathanh"
+    n-gitlab = "https://gitlab.com/huynhbathanh"
+    g-github = "https://github.com/byhbt"

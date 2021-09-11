@@ -22,7 +22,7 @@ It is a self-balancing search tree.
 - When having multiple indexes, MySQL uses the index that finds the smallest number of rows.
 - Index won't work if incorrect data type, for example, you index email column but when you do the query like that
 
-```sql
+```js
 select * from users where email=123
 ```
 
@@ -52,7 +52,7 @@ If the row is updated then the index also need to be updated.
 ### Common pitfalls
 
 - If we use a function e.g: YEAR() then the index column won't be used.
-Use range of full datetime instead
+Use range of full `datetime` instead
 
 - Multi index column:
 The order of columns that matters, index(BA) != index(AB)

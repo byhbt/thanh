@@ -51,7 +51,7 @@ And here is the generated directory structure.
 
 Follow TDD approach, we start by writing some tests in the `fizzbuzz_test.exs` first.
 
-```elixir
+```ruby
 
 defmodule FizzbuzzTest do
   use ExUnit.Case
