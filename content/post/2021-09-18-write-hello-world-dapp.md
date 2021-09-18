@@ -24,11 +24,15 @@ First, we need to install [Truffle](https://www.trufflesuite.com/truffle), this 
 npm install -g truffle
 ```
 
-Then let start to create the first application
+Let's create the first application
 
 ## Step 1: Initialize project
 
+Initializing the project by using `truffle init` command.
+
 ```bash
+╭─~
+╰─$ mkdir hello-dapp
 ╭─~
 ╰─$ cd hello-dapp
 ╭─~/hello-dapp
@@ -216,4 +220,4 @@ If you can see the Hello World like the screenshot below, then congratulation �
 
 ![Migration for the Contract](https://res.cloudinary.com/thanh-xyz/image/upload/v1631962966/thanhxyz-blog/Screen_Shot_2021-09-18_at_6.02.37_PM_ozf0yj.png)
 
-Thank you for your reading!
+Thank you for your reading! And here is the code repository: https://github.com/byhbt/dapp-helloworld
