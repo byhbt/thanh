@@ -1,85 +1,137 @@
 ---
 categories:
-  - Blockchain
+  - Elixir
 tags:
-  - helloworld
-title: Write Hello World DApp on local Ethereum blockchain
-date: 2021-09-18
+  - elixir
+  - fizzbuzz
+title: Implement Fizzbuzz in Elixir
+date: 2021-06-12
 ---
 
-As usual, before starting on new programming language, we need to set up the environment for development.
 
-Here is the list of required tools:
+Let solve the classic programming challenge called "Fizzbuzz". I get the problem statement from [wiki.c2.com](https://wiki.c2.com/?FizzBuzzTest).
 
-- NodeJS (https://nodejs.org/en/)
-- Visual Studio Code (https://code.visualstudio.com/)
-  - Solidity extension (https://marketplace.visualstudio.com/items?itemName=JuanBlanco.solidity)
-- Truffle (https://www.trufflesuite.com/truffle)
+## Problem
 
-And now let start writing:
+> "Write a program that prints the numbers from 1 to 100. But for multiples of three print “Fizz” instead of the number and the multiples of five print “Buzz”. For numbers which are multiples of both three and five print “FizzBuzz”."
 
-First we need to install [Truffle](https://www.trufflesuite.com/truffle), this is DApp development framework.
+Then let break it down:
 
-```bash
-npm install -g truffle
-```
+- Given X from 1 -> 100
+- If X multiple of 3 return `Fizz`
+- If X multiple of 5 return `Buzz`
+- If X multiple of 3 and 5 return `FizzBuzz`
+- Otherwise return the number
 
-Then let start to create the first application
+Above all, make sure we understand the problem correctly. If yes, cool! So now let the hacking begin!
 
-## Step 1: Initialize project
+## Implementation
 
-```bash
-╭─~
-╰─$ cd hello-dapp
-╭─~/hello-dapp
-╰─$ truffle init
-
-Starting init...
-================
-
-> Copying project files to /Users/mypc/hello-dapp
-
-Init successful, sweet!
-
-Try our scaffold commands to get started:
-  $ truffle create contract YourContractName # scaffold a contract
-  $ truffle create test YourTestName         # scaffold a test
-
-http://trufflesuite.com/docs
-
-╭─~/hello-dapp
-╰─$ ls
-contracts         migrations        test              truffle-config.js
-```
-
-At this step, Truffle already initialized the project structure for us. From here we can start write our first contract.
-
-## Step 2: Write the contract
+Let use the Mix tool to initialize a new project:
 
 ```bash
-╭─~/hello-dapp
-╰─$ cd contracts
-╭─~/hello-dapp/contracts
-╰─$ touch HelloWorld.sol
-╭─~/hello-dapp/contracts
-╰─$ ls
-HelloWorld.sol Migrations.sol
+mix new fizzbuzz
 ```
 
-And here is the content of `HelloWorld.sol`
+And here is the generated directory structure.
 
-![HelloWorld Solidity Contract](https://res.cloudinary.com/thanh-xyz/image/upload/v1631961898/thanhxyz-blog/first-contract_rgzud8.png)
+```bash
+.
+├── README.md
+├── _build
+│   ├── dev
+│   └── test
+├── lib
+│   └── fizzbuzz.ex
+├── mix.exs
+└── test
+    ├── fizzbuzz_test.exs
+    └── test_helper.exs
+```
 
-## Step 3: Write the migration
+Follow TDD approach, we start by writing some tests in the `fizzbuzz_test.exs` first.
 
-We need to implement the migration to apply the contract to blockchain:
+```ruby
 
-![Migration for the Contract](https://res.cloudinary.com/thanh-xyz/image/upload/v1631962231/thanhxyz-blog/migration-contract_hc3urt.png)
+defmodule FizzbuzzTest do
+  use ExUnit.Case
 
-## Step 4: Migrate and Run the DApp
+  import ExUnit.CaptureIO
 
-![Run migration and the Smart ](https://res.cloudinary.com/thanh-xyz/video/upload/v1631962644/thanhxyz-blog/migrate-helloworld-contract_lmxwh5.mp4)
+  describe "go/1" do
+    test "return fizz given the divisible number by 3" do
+      assert Fizzbuzz.go(3) == "fizz"
+    end
 
-If you can see the Hello World like the screenshot below, then congratulation! You finished the very first DApp.
+    test "returns buzz given the divisible number by 5" do
+      assert Fizzbuzz.go(5) == "buzz"
+    end
 
-![Migration for the Contract](https://res.cloudinary.com/thanh-xyz/image/upload/v1631962966/thanhxyz-blog/Screen_Shot_2021-09-18_at_6.02.37_PM_ozf0yj.png)
+    test "return fizzbuzz given the divisible number by 3 and 5" do
+      assert Fizzbuzz.go(15) == "fizzbuzz"
+    end
+
+    test "return the number given the indivisible number by 3 and 5" do
+      assert Fizzbuzz.go(11) == 11
+    end
+  end
+
+  describe "go/2" do
+    test "prints the result of each number given a list" do
+      assert capture_io(fn -> Fizzbuzz.go(14, 15) end) == "14\nfizzbuzz\n"
+    end
+  end
+end
+
+```
+
+Then implement the main program. While implementing, we can run the test by using `mix test` command to verify our implementation.
+
+```elixir
+defmodule Fizzbuzz do
+  def go(min, max) do
+    Enum.each(min..max, fn n -> IO.puts go(n) end)
+  end
+
+  def go(num) do
+    case { rem(num, 3), rem(num, 5) } do
+      {0, 0} -> "fizzbuzz"
+      {0, _} -> "fizz"
+      {_, 0} -> "buzz"
+      _ -> num
+    end
+  end
+end
+```
+
+## How to run it
+
+We can run the programming by this command
+
+```bash
+iex -S mix
+```
+
+In the Elixir IEX
+
+```bash
+Fizzbuzz.go(4)
+Fizzbuzz.go(0, 100)
+
+r(Fizzbuzz) # for reloading the application if any code change.
+```
+
+## Learning
+
+If someone says this program is for a newbie and simple, - yes. However, for a newcomer to the Elixir world, I think it is useful to help you learn the syntax as well as the language features.
+
+What we can learn from the above program:
+
+- TDD
+- Some basic syntax in Elixir
+- Testing in Elixir
+- Practice some shortcut keys with your IDE/Editor
+
+In the end, please try to read, understand and rewrite it in another way if you could.
+
+Thank you for your reading!
