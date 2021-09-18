@@ -220,4 +220,29 @@ If you can see the Hello World like the screenshot below, then congratulation �
 
 ![Migration for the Contract](https://res.cloudinary.com/thanh-xyz/image/upload/v1631962966/thanhxyz-blog/Screen_Shot_2021-09-18_at_6.02.37_PM_ozf0yj.png)
 
-Thank you for your reading! And here is the code repository: https://github.com/byhbt/dapp-helloworld
+Finally, here is the code repository: https://github.com/byhbt/dapp-helloworld
+
+## Update the Smart Contract after migrate (deployed)
+
+As we know that after the smart contract is deployed to the blockchain, it becomes immutable. Now if you want to change the code in the smart contract, you have to reset the migration by using the command `migrate --reset` within the `truffle develop`.
+
+```bash
+truffle develop
+
+╭─~/hello-dapp ‹main›
+╰─$ truffle develop
+Truffle Develop started at http://127.0.0.1:9545/
+# ...(other output from the Truffle develop)
+
+truffle(develop)> migrate --reset
+```
+
+## Further reading
+
+- https://www.ludu.co/course/ethereum/running-dapps-locally
+- https://www.trufflesuite.com/docs/truffle/getting-started/interacting-with-your-contracts
+- https://docs.openzeppelin.com/learn/developing-smart-contracts
+- https://cryptozombies.io
+- https://ethereum.org/en/developers/tutorials/how-to-write-and-deploy-an-nft
+
+Thank you for your reading!
