@@ -1,15 +1,13 @@
 baseURL = "https://thanh.xyz/"
-title = "Web Developer Journal"
+title = "Thanh"
 enableRobotsTXT = true
 enableEmoji = true
-theme = "jane"
+theme = "noteworthy"
 
-hasCJKLanguage = false    # has chinese/japanese/korean
-paginate = 3              # Number of articles displayed on the homepage
+paginate = 5              # Number of articles displayed on the homepage
 rssLimit = 20             # Limit Entry Count to Rss file
 disqusShortname = "huynhbathanh"
-googleAnalytics = "UA-1460853-23"
-copyright = ""            # default: author.name
+googleAnalytics = "UA-1460853-23"            # default: author.name
 
 # See https://gohugo.io/content-management/syntax-highlighting/
 PygmentsCodeFences = true # Enable syntax highlighting with GitHub flavoured code fences
@@ -19,6 +17,7 @@ PygmentsOptions = "linenos=table"
 
 # language support # en / zh-cn / other... translations present in i18n/
 defaultContentLanguage = "en"           # Default language to use
+
 [languages.en]
   languageCode = "en"
 
@@ -30,11 +29,6 @@ defaultContentLanguage = "en"           # Default language to use
   priority = 0.5
   filename = "sitemap.xml"
 
-[[menu.main]]
-  name = "Archives"
-  weight = 20
-  identifier = "archives"
-  url = "/post/"
 [[menu.main]]
   name = "Tags"
   weight = 30
@@ -50,7 +44,6 @@ defaultContentLanguage = "en"           # Default language to use
   weight = 50
   url = "https://github.com/byhbt"
 
-
 [params]
   since = "2017"            # Site creation time
   homeFullContent = false   # if false, show post summaries on home page. Otherwise show full content.
@@ -59,7 +52,7 @@ defaultContentLanguage = "en"           # Default language to use
   # site info (optional)
   logoTitle = "Thanh.xyz"        # default: the title value
   keywords = ["Thanh", "byhbt", "huynhbathanh"]
-  description = "Thanh - Web Developer Journal"
+  description = "Web Developer Journal"
 
   # The date format to use; for a list of valid formats, see https://gohugo.io/functions/format/
   dateFormatToUse = "2006-01-02"
