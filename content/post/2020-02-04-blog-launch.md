@@ -1,10 +1,10 @@
 ---
+title: Blog Launch
+date: 2020-02-04
 categories:
   - Blog
 tags:
   - daily
-title: Blog Launch
-date: 2020-02-04
 ---
 
 Open my web blog again.
