@@ -8,6 +8,12 @@ title: How to fix the invalid session id in Wallaby integration testing
 date: 2021-04-29
 ---
 
+Updated: 2022-13-12
+
+Now the Wallaby [can](https://github.com/elixir-wallaby/wallaby/pull/688) display the difference of Chrome vs chromedriver,
+so you don't need to run the script in the Solution section.
+
+![Tux, the Linux mascot]([/assets/images/tux.png](https://i.imgur.com/f5hgldw.png))
 
 ## Problem
 
@@ -69,7 +75,7 @@ Chromedriver version: ChromeDriver 88.0.4324.96 (68dba2d8a0324@{#1784}) (/usr/lo
 Chrome version      : Google Chrome 90.0.4430.93  (/Applications/Google Chrome.app/Contents/MacOS/Google Chrome)
 ```
 
-Yeah, this could be the issue. So now we go to the [Chromium website](https://chromedriver.chromium.org/downloads) to download the match version of `chromedriver`
+Yeah, this could be the issue. Then go to the [Chromium website](https://chromedriver.chromium.org/downloads) to download the match version of `chromedriver`
 
 After download the correct version, extract the `chromedriver_mac64.zip` file then move it to `/usr/local/bin` by using this command:
 

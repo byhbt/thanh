@@ -39,9 +39,6 @@ This article helps us spot the issue faster:
 
 https://shopify.dev/tutorials/migrate-your-app-to-support-samesite-cookies#embedded-apps-and-the-samesite-attribute
 
-
-
-
 ### 3. How many ways to solve it?
 
 1. PHP, we look for where the code use **setcookie()** method then modify it
